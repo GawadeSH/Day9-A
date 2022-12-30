@@ -11,3 +11,13 @@ then
 else
      echo "Employee is abscent"
 fi
+if [[ $isPresent -eq $Attendance ]]
+then
+    RatePerHour=20
+    Hrs=8
+    salary=$((RatePerHour*Hrs))
+    echo "$salary"
+
+else
+   echo "salary=0"
+fi
